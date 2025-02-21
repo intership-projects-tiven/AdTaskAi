@@ -1,3 +1,5 @@
+import gsap from "gsap";
+// functions from external source
 export function horizontalLoop(items, config) {
 	items = gsap.utils.toArray(items);
 	config = config || {};
