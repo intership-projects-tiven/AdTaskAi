@@ -30,14 +30,14 @@ function SessionTestimonials() {
   ];
 
   return (
-    <section className="testimonials mx-auto container">
+    <section className="testimonials mx-auto container mb-40">
       <SessionHeading
         heading="Testinomalias"
         subHeading="Trusted by"
         subHeading2="satisfied clients"
       />
       <div className="grid grid-cols-3 max-w-[70rem] mx-auto gap-4">
-     {data.map(item => <Testimonial feedback={item.feedback} author={item.author} />)}
+     {data.map(item => <Testimonial feedback={item.feedback} author={item.author} key={item.author}/>)}
       </div>
     </section>
   );

@@ -9,6 +9,10 @@
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.8),
     0 0 80px rgba(255, 255, 255, 0.6), 0 0 100px rgba(255, 255, 255, 0.4);
 }
+.glow2::before {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8),
+    0 0 80px rgba(255, 255, 255, 0.6), 0 0 100px rgba(255, 255, 255, 0.4);
+}
 .radialGradient {
   background-image: radial-gradient(
     circle,
@@ -26,4 +30,7 @@
     #242832 30%,
     #242832 80%
   );
+}
+.pathClip{
+  clip-path: polygon(50% 0%, 100% 0, 100% 51%, 49% 51%, 48% 100%, 0 100%, 0% 43%, 0 0);
 }

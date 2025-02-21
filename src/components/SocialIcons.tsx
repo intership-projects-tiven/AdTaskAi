@@ -21,7 +21,7 @@ function SocialIcons() {
       <p className="text-xs">Adtask AI works with :</p>
       <div className="flex gap-7">
         {icons.map((item) => (
-          <div className="p-[1px] bg-gradient-to-r from-color8 to-color9 inline-block rounded-lg relative">
+          <div className="p-[1px] bg-gradient-to-r from-color8 to-color9 inline-block rounded-lg relative" key={Math.random()}>
             <div className="radialGradient border-color9 p-4 h-20 w-20  rounded-lg relative">
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 {item}

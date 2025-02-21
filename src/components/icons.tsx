@@ -267,8 +267,8 @@ export function WheelIcon() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(34.5 34) rotate(89.7298) scale(37.0475 37.5918)"
         >
-          <stop stop-color="#C7D7FF" />
-          <stop offset="1" stop-color="#788199" />
+          <stop stopColor="#C7D7FF" />
+          <stop offset="1" stopColor="#788199" />
         </radialGradient>
       </defs>
     </svg>
@@ -407,8 +407,8 @@ export function Graphicon() {
           y2="106.065"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C7D7FF" />
-          <stop offset="1" stop-color="#788199" />
+          <stop stopColor="#C7D7FF" />
+          <stop offset="1" stopColor="#788199" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_12212_570"
@@ -418,8 +418,8 @@ export function Graphicon() {
           y2="104.149"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C7D7FF" />
-          <stop offset="1" stop-color="#788199" />
+          <stop stopColor="#C7D7FF" />
+          <stop offset="1" stopColor="#788199" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_12212_570"
@@ -429,8 +429,8 @@ export function Graphicon() {
           y2="104.997"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C7D7FF" />
-          <stop offset="1" stop-color="#788199" />
+          <stop stopColor="#C7D7FF" />
+          <stop offset="1" stopColor="#788199" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_12212_570"
@@ -440,8 +440,8 @@ export function Graphicon() {
           y2="103.21"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C7D7FF" />
-          <stop offset="1" stop-color="#788199" />
+          <stop stopColor="#C7D7FF" />
+          <stop offset="1" stopColor="#788199" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_12212_570"
@@ -451,8 +451,8 @@ export function Graphicon() {
           y2="57.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7687B5" />
-          <stop offset="1" stop-color="#333B4F" />
+          <stop stopColor="#7687B5" />
+          <stop offset="1" stopColor="#333B4F" />
         </linearGradient>
         <clipPath id="clip0_12212_570">
           <rect width="120" height="115" rx="16" fill="white" />
@@ -487,8 +487,8 @@ export function PieChartIcon() {
           y2="88.1308"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C7D7FF" />
-          <stop offset="1" stop-color="#788199" />
+          <stop stopColor="#C7D7FF" />
+          <stop offset="1" stopColor="#788199" />
         </linearGradient>
       </defs>
     </svg>
@@ -518,8 +518,8 @@ export function Shock() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(69.9101 111.856) rotate(89.8336) scale(121.881 76.1758)"
         >
-          <stop stop-color="#C7D7FF" />
-          <stop offset="1" stop-color="#788199" />
+          <stop stopColor="#C7D7FF" />
+          <stop offset="1" stopColor="#788199" />
         </radialGradient>
       </defs>
     </svg>
@@ -547,8 +547,8 @@ export function GridIcon1() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(30.8335 30.8333) rotate(89.7337) scale(28.1488 28.1484)"
         >
-          <stop stop-color="#C7D7FF" />
-          <stop offset="1" stop-color="#788199" />
+          <stop stopColor="#C7D7FF" />
+          <stop offset="1" stopColor="#788199" />
         </radialGradient>
       </defs>
     </svg>
@@ -580,8 +580,8 @@ export function GridIcon2() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(27.4997 27.5079) rotate(89.7072) scale(24.9795 27.4687)"
         >
-          <stop stop-color="#C7D7FF" />
-          <stop offset="1" stop-color="#788199" />
+          <stop stopColor="#C7D7FF" />
+          <stop offset="1" stopColor="#788199" />
         </radialGradient>
       </defs>
     </svg>
@@ -598,7 +598,6 @@ export function GridIcon3() {
     >
       <mask
         id="mask0_444_19632"
-        style="mask-type:luminance"
         maskUnits="userSpaceOnUse"
         x="0"
         y="0"
@@ -609,21 +608,21 @@ export function GridIcon3() {
           d="M48.9588 1H3.04125C1.9139 1 1 1.9139 1 3.04125V38.9588C1 40.0861 1.9139 41 3.04125 41H48.9588C50.0861 41 51 40.0861 51 38.9588V3.04125C51 1.9139 50.0861 1 48.9588 1Z"
           fill="white"
           stroke="white"
-          stroke-width="2"
+          strokeWidth="2"
         />
         <path
           d="M16 14.685C13.5 11 9.1225 13.4225 9.43625 17.21C9.75 21 14.75 21 15.0612 24.79C15.375 28.5775 11 31 8.5 27.3138M28.5 13.5H23.5V29.75H28.5M23.5 22.25H28.5"
           stroke="black"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M43.5 17.25C43.5 15.1789 41.8211 13.5 39.75 13.5C37.6789 13.5 36 15.1789 36 17.25V26C36 28.0711 37.6789 29.75 39.75 29.75C41.8211 29.75 43.5 28.0711 43.5 26V17.25Z"
           stroke="black"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </mask>
       <g mask="url(#mask0_444_19632)">
@@ -639,8 +638,8 @@ export function GridIcon3() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(26 21) rotate(89.7337) scale(32.6889 32.6885)"
         >
-          <stop stop-color="#C7D7FF" />
-          <stop offset="1" stop-color="#788199" />
+          <stop stopColor="#C7D7FF" />
+          <stop offset="1" stopColor="#788199" />
         </radialGradient>
       </defs>
     </svg>
@@ -673,8 +672,8 @@ export function GridIcon4() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(26 26.0234) rotate(89.7335) scale(28.087 28.1121)"
         >
-          <stop stop-color="#C7D7FF" />
-          <stop offset="1" stop-color="#788199" />
+          <stop stopColor="#C7D7FF" />
+          <stop offset="1" stopColor="#788199" />
         </radialGradient>
       </defs>
     </svg>
@@ -706,8 +705,8 @@ export function GridIcon5() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(26 26.0234) rotate(89.7335) scale(28.087 28.1121)"
         >
-          <stop stop-color="#C7D7FF" />
-          <stop offset="1" stop-color="#788199" />
+          <stop stopColor="#C7D7FF" />
+          <stop offset="1" stopColor="#788199" />
         </radialGradient>
       </defs>
     </svg>
@@ -739,8 +738,8 @@ export function GridIcon6() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(29.9992 30) rotate(89.747) scale(29.3689 27.9012)"
         >
-          <stop stop-color="#C7D7FF" />
-          <stop offset="1" stop-color="#788199" />
+          <stop stopColor="#C7D7FF" />
+          <stop offset="1" stopColor="#788199" />
         </radialGradient>
       </defs>
     </svg>
@@ -772,8 +771,8 @@ export function GridIcon7() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(25 19.9882) rotate(89.6498) scale(20.7132 27.2402)"
         >
-          <stop stop-color="#C7D7FF" />
-          <stop offset="1" stop-color="#788199" />
+          <stop stopColor="#C7D7FF" />
+          <stop offset="1" stopColor="#788199" />
         </radialGradient>
       </defs>
     </svg>
@@ -804,13 +803,62 @@ export function CornerIcon() {
           x1="8"
           y1="-11"
           x2="9"
-          y2="28.5"h
+          y2="28.5"
+          h
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#333B4F" />
-          <stop offset="1" stop-color="#7687B5" />
+          <stop stopColor="#333B4F" />
+          <stop offset="1" stopColor="#7687B5" />
         </linearGradient>
       </defs>
+    </svg>
+  );
+}
+export function EmailIcon() {
+  return (
+    <svg
+      width="24"
+      height="25"
+      viewBox="0 0 24 25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M22 6.5C22 5.4 21.1 4.5 20 4.5H4C2.9 4.5 2 5.4 2 6.5V18.5C2 19.6 2.9 20.5 4 20.5H20C21.1 20.5 22 19.6 22 18.5V6.5ZM20 6.5L12 11.5L4 6.5H20ZM20 18.5H4V8.5L12 13.5L20 8.5V18.5Z"
+        fill="#5C73AE"
+      />
+    </svg>
+  );
+}
+export function PhoneIcon() {
+  return (
+    <svg
+      width="18"
+      height="19"
+      viewBox="0 0 18 19"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M17 13C15.8 13 14.5 12.8 13.4 12.4H13.1C12.8 12.4 12.6 12.5 12.4 12.7L10.2 14.9C7.4 13.4 5 11.1 3.6 8.3L5.8 6.1C6.1 5.8 6.2 5.4 6 5.1C5.7 4 5.5 2.7 5.5 1.5C5.5 1 5 0.5 4.5 0.5H1C0.5 0.5 0 1 0 1.5C0 10.9 7.6 18.5 17 18.5C17.5 18.5 18 18 18 17.5V14C18 13.5 17.5 13 17 13ZM2 2.5H3.5C3.6 3.4 3.8 4.3 4 5.1L2.8 6.3C2.4 5.1 2.1 3.8 2 2.5ZM16 16.5C14.7 16.4 13.4 16.1 12.2 15.7L13.4 14.5C14.2 14.7 15.1 14.9 16 14.9V16.5Z"
+        fill="#5C73AE"
+      />
+    </svg>
+  );
+}
+export function LocationIcon() {
+  return (
+    <svg
+      width="24"
+      height="25"
+      viewBox="0 0 24 25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 7C12.663 7 13.2989 7.26339 13.7678 7.73223C14.2366 8.20107 14.5 8.83696 14.5 9.5C14.5 9.8283 14.4353 10.1534 14.3097 10.4567C14.1841 10.76 13.9999 11.0356 13.7678 11.2678C13.5356 11.4999 13.26 11.6841 12.9567 11.8097C12.6534 11.9353 12.3283 12 12 12C11.337 12 10.7011 11.7366 10.2322 11.2678C9.76339 10.7989 9.5 10.163 9.5 9.5C9.5 8.83696 9.76339 8.20107 10.2322 7.73223C10.7011 7.26339 11.337 7 12 7ZM12 2.5C13.8565 2.5 15.637 3.2375 16.9497 4.55025C18.2625 5.86301 19 7.64348 19 9.5C19 14.75 12 22.5 12 22.5C12 22.5 5 14.75 5 9.5C5 7.64348 5.7375 5.86301 7.05025 4.55025C8.36301 3.2375 10.1435 2.5 12 2.5ZM12 4.5C10.6739 4.5 9.40215 5.02678 8.46447 5.96447C7.52678 6.90215 7 8.17392 7 9.5C7 10.5 7 12.5 12 19.21C17 12.5 17 10.5 17 9.5C17 8.17392 16.4732 6.90215 15.5355 5.96447C14.5979 5.02678 13.3261 4.5 12 4.5Z"
+        fill="#5C73AE"
+      />
     </svg>
   );
 }

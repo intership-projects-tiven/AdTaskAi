@@ -1,4 +1,4 @@
-import { PrimaryButton, SecondaryButton } from "./Buttons";
+import { NavPrimaryButton, NavSecondaryButton } from "./Buttons";
 import LogoDesign from "./LogoDesign";
 import MainNav from "./MainNav";
 
@@ -9,8 +9,8 @@ export default function Header() {
         <LogoDesign />
         <MainNav />
         <div className="flex justify-end items-center gap-4 -mt-1">
-          <PrimaryButton>Log In</PrimaryButton>
-          <SecondaryButton>Schedule a Call</SecondaryButton>
+          <NavSecondaryButton>Log In</NavSecondaryButton>
+          <NavPrimaryButton>Schedule a Call</NavPrimaryButton>
         </div>
       </nav>
     </header>

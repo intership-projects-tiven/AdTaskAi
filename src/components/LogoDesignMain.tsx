@@ -1,6 +1,48 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useRef, useState } from "react";
 export default function LogoDesignMain() {
+  const scope = useRef<HTMLDivElement>(null);
+  const [mouseEnter, setMouseEnter] = useState(false);
+  useGSAP(
+    () => {
+      const tl = gsap.timeline();
+      tl.from("svg", { opacity: "0", duration: 2 });
+      tl.to(
+        "svg",
+        {
+          filter: "drop-shadow(0 0 10px #7687B5)",
+          opacity: 1,
+          duration: 2,
+          ease: "back",
+        },
+        "<"
+      );
+      tl.to("svg", {
+        filter: "drop-shadow(0 0 0px rgba(0, 0, 0, 0))",
+        duration: 2,
+      });
+    },
+    { scope: scope }
+  );
+  useGSAP(
+    () => {
+      if (mouseEnter) {
+        gsap.to("svg", { filter: "drop-shadow(0 0 10px #7687B5)" });
+      } else {
+        gsap.to("svg", { filter: "drop-shadow(0 0 0px rgba(0, 0, 0, 0))" });
+      }
+    },
+    { scope: scope, dependencies: [mouseEnter] }
+  );
+
   return (
-    <div className="flex gap-1  items-baseline place-items-end w-[29.25rem] h-32 mt-1">
+    <div
+      className="flex gap-1  items-baseline place-items-end w-[29.25rem] h-32 mt-1 hover:drop-shadow-lg"
+      ref={scope}
+      onMouseEnter={() => setMouseEnter(true)}
+      onMouseLeave={() => setMouseEnter(false)}
+    >
       <svg
         width="61"
         height="61"
@@ -25,8 +67,8 @@ export default function LogoDesignMain() {
             y2="60.9795"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#E2E8F8" />
-            <stop offset="1" stop-color="#858992" />
+            <stop stopColor="#E2E8F8" />
+            <stop offset="1" stopColor="#858992" />
           </linearGradient>
         </defs>
       </svg>
@@ -56,8 +98,8 @@ export default function LogoDesignMain() {
             y2="94.9794"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#E2E8F8" />
-            <stop offset="1" stop-color="#858992" />
+            <stop stopColor="#E2E8F8" />
+            <stop offset="1" stopColor="#858992" />
           </linearGradient>
         </defs>
       </svg>
@@ -69,7 +111,6 @@ export default function LogoDesignMain() {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className="ml-3"
-
       >
         <path
           d="M0.870117 15.3112V0.887695H61.4097V15.3112H39.3329V89.195H22.9469V15.3112H0.870117Z"
@@ -88,8 +129,8 @@ export default function LogoDesignMain() {
             y2="89.195"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#E2E8F8" />
-            <stop offset="1" stop-color="#858992" />
+            <stop stopColor="#E2E8F8" />
+            <stop offset="1" stopColor="#858992" />
           </linearGradient>
         </defs>
       </svg>
@@ -101,7 +142,6 @@ export default function LogoDesignMain() {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className="-ml-5"
-
       >
         <path
           d="M30.0066 62.5681C24.6427 62.5681 19.7368 61.1944 15.2887 58.4471C10.8406 55.6343 7.27564 51.9058 4.59372 47.2615C1.97721 42.5518 0.668945 37.3841 0.668945 31.7586C0.668945 26.1331 1.97721 20.9982 4.59372 16.3539C7.27564 11.6442 10.8406 7.91568 15.2887 5.16834C19.7368 2.3556 24.6427 0.949219 30.0066 0.949219C33.8659 0.949219 37.4309 1.63605 40.7016 3.00972C43.9722 4.38339 46.7523 6.31307 49.0417 8.79875V2.32288H62.484V61.1944H49.0417V54.7185C46.7523 57.1388 43.9722 59.0685 40.7016 60.5076C37.4309 61.8812 33.8659 62.5681 30.0066 62.5681ZM31.8709 48.9295C35.0107 48.9295 37.8234 48.1446 40.3091 46.5746C42.8602 45.0047 44.888 42.9442 46.3925 40.3931C47.897 37.7766 48.6492 34.8985 48.6492 31.7586C48.6492 28.6188 47.897 25.7734 46.3925 23.2223C44.888 20.6058 42.8602 18.5126 40.3091 16.9426C37.8234 15.3727 35.0434 14.5878 31.969 14.5878C28.8292 14.5878 25.9837 15.3727 23.4326 16.9426C20.9469 18.5126 18.9518 20.6058 17.4473 23.2223C15.9428 25.7734 15.1906 28.6188 15.1906 31.7586C15.1906 34.8985 15.9428 37.7766 17.4473 40.3931C18.9518 42.9442 20.9469 45.0047 23.4326 46.5746C25.9837 48.1446 28.7965 48.9295 31.8709 48.9295Z"
@@ -120,8 +160,8 @@ export default function LogoDesignMain() {
             y2="62.5681"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#E2E8F8" />
-            <stop offset="1" stop-color="#858992" />
+            <stop stopColor="#E2E8F8" />
+            <stop offset="1" stopColor="#858992" />
           </linearGradient>
         </defs>
       </svg>
@@ -150,8 +190,8 @@ export default function LogoDesignMain() {
             y2="62.9614"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#E2E8F8" />
-            <stop offset="1" stop-color="#858992" />
+            <stop stopColor="#E2E8F8" />
+            <stop offset="1" stopColor="#858992" />
           </linearGradient>
         </defs>
       </svg>
@@ -180,8 +220,8 @@ export default function LogoDesignMain() {
             y2="94.1944"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#E2E8F8" />
-            <stop offset="1" stop-color="#858992" />
+            <stop stopColor="#E2E8F8" />
+            <stop offset="1" stopColor="#858992" />
           </linearGradient>
         </defs>
       </svg>
@@ -210,8 +250,8 @@ export default function LogoDesignMain() {
             y2="15.372"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#E2E8F8" />
-            <stop offset="1" stop-color="#858992" />
+            <stop stopColor="#E2E8F8" />
+            <stop offset="1" stopColor="#858992" />
           </linearGradient>
         </defs>
       </svg>
@@ -240,8 +280,8 @@ export default function LogoDesignMain() {
             y2="60.9795"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#E2E8F8" />
-            <stop offset="1" stop-color="#858992" />
+            <stop stopColor="#E2E8F8" />
+            <stop offset="1" stopColor="#858992" />
           </linearGradient>
         </defs>
       </svg>
@@ -271,8 +311,8 @@ export default function LogoDesignMain() {
             y2="84.1947"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#E2E8F8" />
-            <stop offset="1" stop-color="#858992" />
+            <stop stopColor="#E2E8F8" />
+            <stop offset="1" stopColor="#858992" />
           </linearGradient>
         </defs>
       </svg>

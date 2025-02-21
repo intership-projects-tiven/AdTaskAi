@@ -1,7 +1,55 @@
+import {  SecondaryButton} from "./Buttons";
 import GridItem from "./GridItem";
+import {
+  GridIcon1,
+  GridIcon2,
+  GridIcon3,
+  GridIcon4,
+  GridIcon6,
+  GridIcon7,
+} from "./icons";
 import SessionHeading from "./SessionHeading";
 
 function SessionService() {
+  const data = [
+    {
+      icon: <GridIcon1 />,
+      heading: "Smart Ad Targeting",
+      description:
+        "AI-powered audience segmentation ensures your ads reach the right people, delivering higher ROI and maximum conversion rates.",
+    },
+    {
+      icon: <GridIcon2 />,
+      heading: "Performance Analytics",
+      description:
+        "Access real-time insights and track key metrics across all campaigns in one unified dashboard to quickly refine your strategies.",
+    },
+    {
+      icon: <GridIcon3 />,
+      heading: "SEO Automation",
+      description:
+        "Automate keyword research and content optimization suggestions to improve your search engine rankings with less effort.",
+    },
+    {
+      icon: <GridIcon4 />,
+      heading: "Social Media Marketing",
+      description:
+        "AI agents craft personalized content, schedule posts, monitor engagement, and refine strategies in real time for maximum impact across all major social platforms.",
+    },
+    {
+      icon: <GridIcon6 />,
+      heading: "Conversion Optimization",
+      description:
+        "AI-driven A/B testing and automated tweaks to landing pages and funnels help you consistently improve conversion rates.",
+    },
+    {
+      icon: <GridIcon7 />,
+      heading: "Campaign Automation",
+      description:
+        "Centralize and streamline your ad management. Our intelligent engine automatically adjusts bids, budgets, and targeting to maximize results.",
+    },
+  ];
+
   return (
     <section className="services container mx-auto">
       <SessionHeading
@@ -9,18 +57,27 @@ function SessionService() {
         subHeading="Innovative Services"
         subHeading2="for Growth."
       />
-      <div className="max-w-[70.9375rem] mx-auto m-4">
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-y-14 gap-x-[66px] place-content-center">
-          <GridItem />
-          <GridItem />
-          <GridItem />
-          <GridItem />
-          <GridItem />
-          <GridItem />
+      <div className="max-w-[71.9375rem] mx-auto m-4">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-14 place-content-center ">
+          {data.map((item) => (
+            <GridItem>
+              <div className="flex flex-col gap-4 justify-between h-full text-center text-lg">
+                <div className="h-36 flex justify-center items-center">
+                  {item.icon}
+                </div>
+                <div className="h-32">
+                  <h3 className="mb-3 bold text-2xl">{item.heading}</h3>
+                  <p className="text-sm">{item.description}</p>
+                </div>
+              </div>
+            </GridItem>
+          ))}
         </div>
       </div>
 
-      <button>Contact Us</button>
+      <div className="flex justify-center p-28">
+        <SecondaryButton>Contact Us</SecondaryButton>
+      </div>
     </section>
   );
 }
