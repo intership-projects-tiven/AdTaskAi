@@ -4,7 +4,7 @@ import { useRef } from "react";
 import gsap from "gsap";
 
 export default function LightningDesign() {
-  const scope = useRef();
+  const scope = useRef<HTMLDivElement>(null);
 
   useGSAP(
     () => {

@@ -173,4 +173,16 @@
       #263048;
     border-radius: 14px;
   }
+  /* .effect1 {
+    position: absolute;
+    width: 541px;
+    height: 531px;
+    top: 101px;
+    left: 450px;
+    background: radial-gradient(circle, rgba(255,255,255,0.5) 40%, rgba(255,255,255,0) 100%);
+    mix-blend-mode: plus-lighter;
+    backdrop-filter: blur(47.2px);
+    mask-image: radial-gradient(circle, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  } */
 }

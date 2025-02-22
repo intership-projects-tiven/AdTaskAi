@@ -6,7 +6,7 @@ function MovingLogo() {
   const scope = useRef<HTMLDivElement>(null);
   useGSAP(
     () => {
-      const boxes = gsap.utils.toArray(".box");
+      const boxes = gsap.utils.toArray(".box") as HTMLElement[];
       const loop = horizontalLoop(boxes, {
         paused: true,
         repeat: -1,
