@@ -11,7 +11,7 @@ function Hero() {
    gsap.to('.rotation', {rotation:"-360", ease: "none", repeat:-1, duration: 30})
   })
   return (
-    <section className="flex flex-col gap-12 my-16 relative" ref={scope}>
+    <section className="flex flex-col gap-12 my-16 relative p-4" ref={scope}>
       <div className="effect1"></div>
       <div className=" flex justify-start items-center flex-col gap-12 text-center ">
         <div className="flex  items-center flex-shrink-0 border bg-gradient-to-r from-color3/5 to-color4/5 border-color4 rounded-xl p-2 relative overflow-hidden">
@@ -49,9 +49,9 @@ function Hero() {
           <p className="text-[.625rem] ">Try AdTask AI free for 30 days</p>
         </div>
       </div>
-      <div className="p-[1px] h-[37.5rem] w-1/2 rounded-3xl container mx-auto relative overflow-hidden bg-color8 -z-10">
+      <div className="p-[1px] md:h-[37.5rem] h-[20rem] lg:w-1/2 rounded-3xl container mx-auto relative overflow-hidden bg-color8 -z-10">
         <iframe
-          className="  w-full h-full  rounded-3xl "
+          className="  w-full h-full  rounded-3xl bg-black "
           src="https://www.youtube.com/embed/CPWxExGk7PM"
           title="Charli xcx - Apple (official lyric video)"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"

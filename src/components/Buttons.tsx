@@ -33,7 +33,7 @@ export function SecondaryButton({ children, className }: props) {
 export function NavPrimaryButton({ children, className }: props) {
   return (
     <button
-      className={`ring-1 py-2 min-w-40 rounded-full ring-color2 bg-color3 relative overflow-hidden  ${className}`}
+      className={`ring-1 py-2 rounded-full ring-color2 bg-color3 relative overflow-hidden  ${className}`}
     >
       {children}
       <div className="absolute -bottom-6 left-1/2 -translate-x-1/2">

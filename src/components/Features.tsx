@@ -16,7 +16,7 @@ function Features() {
       <p className="text-center mb-32">
         Experience Intelligent Features to optimize your marketing efforts.
       </p>
-      <div className="grid grid-cols-3 gap-8 place-items-center max-w-[70rem] mx-auto">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 place-items-center max-w-[70rem] mx-auto">
         <FeatureBox
           className="h-[37.0625rem] w-[22rem]  row-span-2 "
           heading="Reach Target Audience"

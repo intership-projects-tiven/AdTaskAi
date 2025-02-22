@@ -44,7 +44,7 @@ export function horizontalLoop(
       ? gsap.utils.snap(config.snap)
       : (v: number) => v;
 
-  let totalWidth: number;
+  let totalWidth: number = 0;
   let curX: number;
   let distanceToStart: number;
   let distanceToLoop: number;

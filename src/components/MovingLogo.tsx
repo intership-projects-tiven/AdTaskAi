@@ -17,7 +17,7 @@ function MovingLogo() {
   );
   return (
     <div className="overflow-hidden grid grid-cols-1" ref={scope}>
-      <div className="flex  items-center gap-4 p-4 justify-between my-32 w-[200%] mx-auto ">
+      <div className="flex  items-center gap-4 p-4 justify-between md:my-32 my-12 w-[200%] mx-auto ">
         <img
           src="./1.png"
           alt="w image"
