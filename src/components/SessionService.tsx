@@ -60,7 +60,7 @@ function SessionService() {
       <div className="max-w-[71.9375rem] mx-auto m-4">
         <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-14 place-content-center ">
           {data.map((item) => (
-            <GridItem>
+            <GridItem key={item.heading}>
               <div className="flex flex-col gap-4 justify-between h-full text-center text-lg">
                 <div className="h-36 flex justify-center items-center">
                   {item.icon}

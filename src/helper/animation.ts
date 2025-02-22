@@ -57,3 +57,14 @@ export function horizontalLoop(items, config) {
   }
 	return tl;
 }
+
+// animate height function
+export function animateHeight(arrayOfHeights: number[], className: string){
+  let index = 0;
+  const interval = setInterval(() => {
+    if (index < arrayOfHeights.length) index += 1;
+    else index = 0;
+    gsap.to(className, { height: arrayOfHeights[index]});
+  }, 2000);
+  return () => clearInterval(interval); // Cleanup interval on unmount
+}

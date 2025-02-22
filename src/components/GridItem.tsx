@@ -5,7 +5,7 @@ interface props {
 }
 function GridItem({ children }: props) {
   return (
-    <div className=" w-[21.125rem] min-[]:h-[18.25rem] p-3 relative">
+    <div className=" w-[21.125rem] min-h-[18.25rem] p-3 relative">
       <div className="absolute -top-10 -left-10">
         <CornerIcon />
       </div>

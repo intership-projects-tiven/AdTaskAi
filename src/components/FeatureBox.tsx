@@ -11,7 +11,7 @@ function FeatureBox({ heading, children, description, className }: props) {
   return (
     <LightBorder className={`${className}`}>
       <div
-        className={`flex flex-col radialGradient2 justify-end h-full  p-4 rounded-lg`}
+        className={`flex flex-col radialGradient3 justify-end h-full  p-4 rounded-lg relative overflow-hidden`}
       >
         <div>{children}</div>
         <div>

@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 import { useRef } from "react";
 import gsap from "gsap";
 function Hero() {
-  const scope = useRef();
+  const scope = useRef<HTMLElement>(null);
   useGSAP(() => {
    gsap.to('.rotation', {rotation:"-360", ease: "none", repeat:-1, duration: 30})
   })
@@ -54,7 +54,7 @@ function Hero() {
           className="  w-full h-full  rounded-3xl "
           src="https://www.youtube.com/embed/CPWxExGk7PM"
           title="Charli xcx - Apple (official lyric video)"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         ></iframe>
