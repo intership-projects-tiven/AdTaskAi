@@ -8,12 +8,32 @@ export default function LightningDesign() {
 
   useGSAP(
     () => {
-      gsap.to(".userIcon", {
-        x: 0,
-        y: 0,
-        repeat: -1,
-        duration: 1,
-      });
+      MoveIcons(
+        ["61.65%", "54.83%", "52.84%"],
+        ["14.35%", "23.09%", "31.39%"],
+        ".userIcon1"
+      );
+      MoveIcons(
+        ["76.7%", "71.88%", "63.92%"],
+        ["47.31%", "42.6%", "42.38%"],
+        ".userIcon3"
+      );
+      MoveIcons(
+        ["58.24%", "54.83%", "50%"],
+        ["72.65%", "63.45%", "54.26%"],
+        ".userIcon4"
+      );
+      MoveIcons(
+        ["21.59%", "28.41%", "36.36%"],
+        ["58.07%", "51.57%", "47.76%"],
+        ".userIcon5"
+      );
+      MoveIcons(
+        ["21.59%", "28.41%", "36.36%"],
+        ["27.13%", "28.48%", "34.08%"],
+        ".userIcon2"
+      );
+
     },
     { scope: scope }
   );
@@ -25,18 +45,34 @@ export default function LightningDesign() {
       <div className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-110">
         <LightShapeSvg />
       </div>
-      <div className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border w-full h-[446px]">
-        <UserIcon className="absolute left-[65.06%] top-[8.74] userIcon" />
-        <UserIcon className="absolute left-[10.23%] top-[23.32%] userIcon" />
-        <UserIcon className="absolute left-[90.34%] top-[47.31%] userIcon" />
-        <UserIcon className="absolute left-[61.65%] top-[79.15%] userIcon" />
-        <UserIcon className="absolute left-[10.23%] top-[60.76%] userIcon" />
+      <div className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  w-full h-[446px]">
+        <UserIcon className="absolute left-[65.06%] top-[8.74] userIcon1" />
+        <UserIcon className="absolute left-[10.23%] top-[23.32%] userIcon2" />
+        <UserIcon className="absolute left-[90.34%] top-[47.31%] userIcon3" />
+        <UserIcon className="absolute left-[61.65%] top-[79.15%] userIcon4" />
+        <UserIcon className="absolute left-[10.23%] top-[60.76%] userIcon5" />
       </div>
 
       <div className="h-96 w-96  rounded-full  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-[1px] border-color7"></div>
       <div className="h-96 w-96 scale-75  rounded-full  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-[1px] border-color7"></div>
     </div>
   );
+}
+function MoveIcons(xCoords: string[], yCoords: string[], className: string) {
+  const tl = gsap.timeline({ repeat: -1 });
+
+  xCoords.forEach((x, index) => {
+    const y = yCoords[index] || "0px"; // Default to "0px" if no y coordinate is provided
+
+    tl.to(className, {
+      left: x,
+      top: y,
+      opacity: 1,
+      duration: 0.2,
+    });
+  });
+
+  tl.to(className, { opacity: 0, duration: 0.5 }); // Fade out at the end
 }
 
 function LightShapeSvg() {

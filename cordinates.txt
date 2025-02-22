@@ -1,0 +1,30 @@
+/* Vector */
+
+position: absolute;
+/* Vector */
+
+position: absolute;
+left: 21.59%;
+right: 71.59%;
+top: 27.13%;
+bottom: 67.49%;
+
+background: #788199;
+/* Vector */
+
+position: absolute;
+left: 28.41%;
+right: 64.77%;
+top: 28.48%;
+bottom: 66.14%;
+
+background: #788199;
+/* Vector */
+
+position: absolute;
+left: 36.36%;
+right: 56.82%;
+top: 34.08%;
+bottom: 60.54%;
+
+background: #788199;
