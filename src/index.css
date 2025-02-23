@@ -202,4 +202,9 @@
     text-shadow: 0 0 200px rgba(51, 59, 79, 0.5);
     color: transparent;
   }
+  .effect5 {
+    font: bolder 820pt/120pt monospace;
+    text-shadow: 0 0 200px rgba(118, 135, 181, 0.5);
+    color: transparent;
+  }
 }

@@ -12,8 +12,8 @@ function Hero() {
   })
   return (
     <section className="flex  flex-col gap-12 my-16 relative p-4" ref={scope}>
-      <p className="effect2 absolute left-1/2 -translate-x-1/2 -z-10 scale-75 ">▲</p>
-      <div className=" flex justify-start items-center flex-col gap-12 text-center ">
+      <p className="effect2 absolute left-1/2 -translate-x-1/2 -z-10 scale-x-90 scale-y-125">▲</p>
+      <div className=" flex justify-start items-center flex-col gap-12 text-center">
         <div className="flex  items-center flex-shrink-0 border bg-gradient-to-r from-color3/5 to-color4/5 border-color4 rounded-xl p-2 relative overflow-hidden">
           <div className="-mr-2">
             <Stars />

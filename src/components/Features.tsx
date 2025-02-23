@@ -8,10 +8,10 @@ import SessionHeading from "./SessionHeading";
 function Features() {
   return (
     <section className="features p-4 container mx-auto relative">
-      <p className="effect4 absolute top-[30%] left-1/2 -translate-x-1/2 -z-20">
+
+    <p className="effect4 absolute top-96 left-1/2 -translate-x-1/2 -z-20 ">
         👁️
       </p>
-
       <SessionHeading
         heading="features"
         subHeading="Feature packed to make"

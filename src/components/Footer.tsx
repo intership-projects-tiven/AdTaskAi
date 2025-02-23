@@ -3,7 +3,7 @@ import LogoDesignMain from "./LogoDesignMain";
 
 function Footer() {
   return (
-    <footer className="border-t-[1px] border-color10 p-4 bg-black/25 backdrop backdrop-blur-md">
+    <footer className="border-t-[1px] border-color10 p-4 bg-black/95 backdrop backdrop-blur-md">
       <div className="lg:container mx-auto grid md:grid-cols-[1fr_0.5fr_0.5fr] grid-cols-2 p-8 gap-12">
         <div className="row-start-2 md:row-start-1 md:col-span-1 col-span-2">
           <div className="scale-75 md:scale-100">
