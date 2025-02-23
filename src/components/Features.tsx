@@ -7,7 +7,11 @@ import SessionHeading from "./SessionHeading";
 
 function Features() {
   return (
-    <section className="features p-4 container mx-auto">
+    <section className="features p-4 container mx-auto relative">
+      <p className="effect4 absolute top-[30%] left-1/2 -translate-x-1/2 -z-20">
+        👁️
+      </p>
+
       <SessionHeading
         heading="features"
         subHeading="Feature packed to make"
@@ -30,21 +34,21 @@ function Features() {
           heading="Marketing made Easier"
           description="Save time and simplify campaign management. Let automated workflows handle the heavy lifting, so you can focus on creativity."
         >
-          <RotatingSetting/>
+          <RotatingSetting />
         </FeatureBox>
         <FeatureBox
           className="h-[37.0625rem] w-[22rem] row-span-2  "
           heading="Intelligent Agents to Optimize your Reach"
           description="Scale and refine your marketing with AI-powered agents. They track performance in real-time to help you reach more customers efficiently."
         >
-        <LightningDesign/>
+          <LightningDesign />
         </FeatureBox>
         <FeatureBox
           className="h-[17.5rem] w-[22rem] "
           heading="Smart Marketing Insights"
           description="Unlock actionable data to guide every decision. Stay ahead of trends, refine your strategies, and make confident moves with powerful analytics."
         >
-           <GraphBox/>
+          <GraphBox />
         </FeatureBox>
       </div>
     </section>

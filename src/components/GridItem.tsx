@@ -6,6 +6,8 @@ interface props {
 function GridItem({ children }: props) {
   return (
     <div className=" w-[21.125rem] min-h-[18.25rem] p-3 relative">
+       <p className="effect absolute left-1/2 -translate-x-1/2 -z-10 scale-[50%]">▲</p>
+       <p className="effect absolute top-0 left-1/2 -translate-x-1/2 -z-10 scale-x-[25%] scale-y-[35%] ">▲</p>
       <div className="absolute -top-10 -left-10">
         <CornerIcon />
       </div>

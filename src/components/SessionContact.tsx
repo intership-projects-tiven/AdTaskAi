@@ -10,7 +10,10 @@ function SessionContact() {
         </div>
       </div>
       <div className="grid md:grid-cols-2 gap-20 p-8 max-w-[69.5rem] mx-auto">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 relative">
+          <p className="effect4 absolute top-[1%] left-1/2 -translate-x-1/2 -z-20 scale-50">
+          ●
+          </p>
           <div>
             <h2 className="text-4xl text-white ">Ask whatever you have </h2>
             <h2 className="text-4xl mb-8">
@@ -43,19 +46,25 @@ function SessionContact() {
         <form className="flex flex-col gap-8">
           <div>
             <label className="text-xs block mb-2">Name</label>
-            <input type="text" className="h-7 w-full p-2 rounded-sm bg-black/25 outline outline-[1px] outline-color18" />
+            <input
+              type="text"
+              className="h-7 w-full p-2 rounded-sm bg-black/25 outline outline-[1px] outline-color18"
+            />
           </div>
           <div>
             <label className="text-xs block mb-2">Email</label>
-            <input type="text" className="h-7 w-full p-2 rounded-sm bg-black/25 outline outline-[1px] outline-color18" />
+            <input
+              type="text"
+              className="h-7 w-full p-2 rounded-sm bg-black/25 outline outline-[1px] outline-color18"
+            />
           </div>
           <div>
             <label className="text-xs block mb-2">Message</label>
             <textarea className="h-32 w-full p-2 rounded-sm bg-black/25 outline outline-[1px] outline-color18"></textarea>
           </div>
-        <div className="flex justify-center">
-          <SecondaryButton className="w-32">submit</SecondaryButton>
-        </div>
+          <div className="flex justify-center">
+            <SecondaryButton className="w-32">submit</SecondaryButton>
+          </div>
         </form>
       </div>
     </section>

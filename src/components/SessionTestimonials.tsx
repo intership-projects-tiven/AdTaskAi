@@ -36,7 +36,8 @@ function SessionTestimonials() {
   ];
 
   return (
-    <section className="testimonials mx-auto container mb-40">
+    <section className="testimonials mx-auto container mb-40 relative">
+        <p className="effect4 absolute top-[30%] left-1/2 -translate-x-1/2 -z-20">👁️</p>
       <SessionHeading
         heading="Testinomalias"
         subHeading="Trusted by"

@@ -11,8 +11,8 @@ function Hero() {
    gsap.to('.rotation', {rotation:"-360", ease: "none", repeat:-1, duration: 30})
   })
   return (
-    <section className="flex flex-col gap-12 my-16 relative p-4" ref={scope}>
-      <div className="effect1"></div>
+    <section className="flex  flex-col gap-12 my-16 relative p-4" ref={scope}>
+      <p className="effect2 absolute left-1/2 -translate-x-1/2 -z-10 scale-75 ">▲</p>
       <div className=" flex justify-start items-center flex-col gap-12 text-center ">
         <div className="flex  items-center flex-shrink-0 border bg-gradient-to-r from-color3/5 to-color4/5 border-color4 rounded-xl p-2 relative overflow-hidden">
           <div className="-mr-2">
@@ -35,7 +35,7 @@ function Hero() {
           ></motion.div>
         </div>
         <div className="flex gap-2 justify-center rounded-xl p-2">
-          <div className="text-8xl">
+          <div className="text-8xl md:scale-100 scale-75">
             <LogoDesignMain />
           </div>
         </div>
@@ -49,7 +49,7 @@ function Hero() {
           <p className="text-[.625rem] ">Try AdTask AI free for 30 days</p>
         </div>
       </div>
-      <div className="p-[1px] md:h-[37.5rem] h-[20rem] lg:w-1/2 rounded-3xl container mx-auto relative overflow-hidden bg-color8 -z-10">
+      <div className="p-[1px] md:h-[37.5rem] h-[20rem] lg:w-[62rem] rounded-3xl container mx-auto relative overflow-hidden bg-color8 -z-10">
         <iframe
           className="  w-full h-full  rounded-3xl bg-black "
           src="https://www.youtube.com/embed/CPWxExGk7PM"

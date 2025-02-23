@@ -1,5 +1,5 @@
 import { NavPrimaryButton, NavSecondaryButton } from "./Buttons";
-import { MenuIcon } from "./icons";
+import { MenuIcon, PhoneIcon } from "./icons";
 import LogoDesign from "./LogoDesign";
 import MainNav from "./MainNav";
 
@@ -11,11 +11,11 @@ export default function Header() {
         <MainNav />
         <div className="md:flex justify-end items-center gap-4 -mt-1 hidden">
           <NavSecondaryButton className="lg:min-w-40 min-w-20">Log In</NavSecondaryButton>
-          <div className="block md:hidden">
-            <NavPrimaryButton className="lg:min-w-40 min-w-20">Schedule a Call</NavPrimaryButton>
+          <div className="lg:block hidden">
+            <NavPrimaryButton className="lg:min-w-40 min-w-20 ">Schedule a Call</NavPrimaryButton>
           </div>
-          <div className="block ">
-            <NavPrimaryButton className="min-w-10 ">🎤</NavPrimaryButton>
+          <div className="md:block lg:hidden hidden ">
+            <NavPrimaryButton className="min-w-10 flex justify-center"><PhoneIcon/></NavPrimaryButton>
           </div>
         </div>
         <div className="flex justify-end items-center gap-4 -mt-1 md:hidden">

@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 @layer utilities {
+  body {
+    background-image: linear-gradient(
+      rgba(179, 179, 179, 0.030) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(179, 179, 179, 0.030) 1px, transparent 1px);
+  background-size: 50px 50px;
+  overflow-x: hidden;
+  }
   .glow {
     width: 60px;
     height: 20px;
@@ -173,17 +182,24 @@
       #263048;
     border-radius: 14px;
   }
-
-  /* .effect1 {
-    position: absolute;
-    width: 541px;
-    height: 531px;
-    top: 101px;
-    left: 450px;
-    background: radial-gradient(circle, rgba(255,255,255,0.5) 40%, rgba(255,255,255,0) 100%);
-    mix-blend-mode: plus-lighter;
-    backdrop-filter: blur(47.2px);
-    mask-image: radial-gradient(circle, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  } */
+  .effect {
+    font: bolder 820pt/120pt monospace;
+    text-shadow: 0 0 200px rgba(51, 59, 79, 0.8);
+    color: transparent;
+  }
+  .effect2 {
+    font: bolder 820pt/120pt monospace;
+    text-shadow: 0 0 200px rgba(118, 135, 181, 0.5);
+    color: transparent;
+  }
+  .effect3 {
+    font: bolder 1520pt/120pt monospace;
+    text-shadow: 0 0 1000px rgba(118, 135, 181, 0.5);
+    color: transparent;
+  }
+  .effect4 {
+    font: bolder 420pt/120pt monospace;
+    text-shadow: 0 0 200px rgba(51, 59, 79, 0.5);
+    color: transparent;
+  }
 }
