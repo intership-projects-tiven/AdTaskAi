@@ -44,7 +44,7 @@ function SessionTestimonials() {
         subHeading="Trusted by"
         subHeading2="satisfied clients"
       />
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 max-w-[70rem] mx-auto gap-4 justify-center">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 max-w-[70rem] mx-auto gap-4 justify-center place-items-center">
         {data.map((item) => (
           <Testimonial
             feedback={item.feedback}

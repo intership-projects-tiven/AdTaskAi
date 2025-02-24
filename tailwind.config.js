@@ -28,7 +28,7 @@ export default {
         Poppins: ["Poppins", "sans-serif"],
       },
       gridTemplateColumns: {
-        'serviceGrid': 'repeat(auto-fill , minmax(19rem , 1fr))',
+        'serviceGrid': 'repeat(auto-fit , minmax(20rem , 1fr))',
       },
     },
   },
