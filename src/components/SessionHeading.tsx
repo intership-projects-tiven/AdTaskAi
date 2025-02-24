@@ -14,8 +14,8 @@ function SessionHeading({ heading, subHeading, subHeading2 }: props) {
             {heading}
           </div>
         </div>
-        <h2 className="text-4xl text-white ">{subHeading} </h2>
-        <h2 className="text-4xl mb-8">
+        <h2 className="sm:text-4xl text-2xl text-white ">{subHeading} </h2>
+        <h2 className="sm:text-4xl text-2xl mb-8">
           <span className="bg-gradient-to-r from-color14 via-color15 to-color16 bg-clip-text inline-block text-transparent">
             {subHeading2}
           </span>

@@ -58,7 +58,7 @@ function SessionService() {
         subHeading2="for Growth."
       />
       <div className="max-w-[71.9375rem] mx-auto m-4">
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-14 place-content-center ">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-14 place-content-center sm:overflow-visible overflow-x-clip ">
           {data.map((item) => (
             <GridItem key={item.heading}>
               <div className="flex flex-col gap-4 justify-between h-full text-center text-lg">

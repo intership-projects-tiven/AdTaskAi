@@ -11,14 +11,14 @@ function FeatureBox({ heading, children, description, className }: props) {
   return (
     <LightBorder className={`${className}`}>
       <div
-        className={`flex flex-col bg-[#1d1d1d4d] justify-end h-full  p-4 rounded-lg relative overflow-hidden`}
+        className={`relative flex h-full flex-col justify-end  overflow-hidden rounded-lg bg-[#1d1d1d4d] p-4`}
       >
-        <p className="effect4 absolute -top-64 -left-56 z-10 w-full h-full scale-x-[30%] scale-y-[75%]">
+        <div className="effect4x absolute -left-48 -top-16 z-10 h-full w-full scale-x-[30%] scale-y-[75%] font-mono text-[420pt] font-extrabold leading-[120pt] text-transparent">
           ●
-        </p>
-        <p className="effect2 absolute -left-28 top-16 z-10 w-full h-full scale-x-[80%] scale-y-115">
+        </div>
+        <div className="effect2 scale-y-115 absolute -left-28 top-48 z-10 h-full w-full scale-x-[80%] font-mono text-[820pt] font-extrabold leading-[120pt] text-transparent">
           ▲
-        </p>
+        </div>
         <div className="z-20">{children}</div>
         <div>
           <h2 className="font-bold">{heading}</h2>

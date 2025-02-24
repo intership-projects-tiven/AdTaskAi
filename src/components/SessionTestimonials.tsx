@@ -1,3 +1,4 @@
+import { EllipseLight } from "./LightEffects";
 import SessionHeading from "./SessionHeading";
 import Testimonial from "./Testimonial";
 
@@ -37,7 +38,7 @@ function SessionTestimonials() {
 
   return (
     <section className="testimonials mx-auto container mb-40 relative">
-        <p className="effect4 absolute top-[30%] left-1/2 -translate-x-1/2 -z-20">👁️</p>
+        <EllipseLight/>
       <SessionHeading
         heading="Testinomalias"
         subHeading="Trusted by"

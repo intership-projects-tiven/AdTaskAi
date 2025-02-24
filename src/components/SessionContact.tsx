@@ -1,5 +1,6 @@
 import { SecondaryButton } from "./Buttons";
 import { EmailIcon, LocationIcon, PhoneIcon } from "./icons";
+import { CircleLight } from "./LightEffects";
 
 function SessionContact() {
   return (
@@ -11,9 +12,7 @@ function SessionContact() {
       </div>
       <div className="grid md:grid-cols-2 gap-20 p-8 max-w-[69.5rem] mx-auto">
         <div className="flex flex-col gap-4 relative">
-          <p className="effect4 absolute top-[1%] left-1/2 -translate-x-1/2 -z-20 scale-50">
-          ●
-          </p>
+          <CircleLight/>
           <div>
             <h2 className="text-4xl text-white ">Ask whatever you have </h2>
             <h2 className="text-4xl mb-8">

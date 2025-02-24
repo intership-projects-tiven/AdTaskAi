@@ -19,7 +19,7 @@ function SocialIcons() {
   return (
     <div className="flex flex-col gap-8 items-center mb-[200px]">
       <p className="text-xs">Adtask AI works with :</p>
-      <div className="grid grid-cols-3 md:grid-cols-6 gap-7">
+      <div className="grid sm:grid-cols-3 md:grid-cols-6 grid-cols-2 gap-7">
         {icons.map((item, index) => (
           <div className="group" key={item.label + index}>
             <div className=" p-[1px] bg-gradient-to-r from-color8 to-color9 inline-block rounded-lg relative group-hover:-translate-y-4 transition-all duration-500 group-hover:scale-105">

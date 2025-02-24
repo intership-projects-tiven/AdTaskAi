@@ -5,6 +5,7 @@ import LogoDesignMain from "./LogoDesignMain";
 import { motion } from "motion/react";
 import { useRef } from "react";
 import gsap from "gsap";
+import { LampLight } from "./LightEffects";
 function Hero() {
   const scope = useRef<HTMLElement>(null);
   useGSAP(() => {
@@ -12,7 +13,7 @@ function Hero() {
   })
   return (
     <section className="flex  flex-col gap-12 my-16 relative p-4" ref={scope}>
-      <p className="effect2 absolute left-1/2 -translate-x-1/2 -z-10 scale-x-90 scale-y-125">▲</p>
+      <LampLight/>
       <div className=" flex justify-start items-center flex-col gap-12 text-center">
         <div className="flex  items-center flex-shrink-0 border bg-gradient-to-r from-color3/5 to-color4/5 border-color4 rounded-xl p-2 relative overflow-hidden">
           <div className="-mr-2">
@@ -34,8 +35,8 @@ function Hero() {
             className="blur-sm h-32 w-6 absolute -rotate-12 shadow-2xl shadow-white bg-gradient-to-r from-white/15 via-white/30 to-white/15 -left-16"
           ></motion.div>
         </div>
-        <div className="flex gap-2 justify-center rounded-xl p-2">
-          <div className="text-8xl md:scale-100 scale-75">
+        <div className="flex gap-2 justify-center rounded-xl p-2 w-full">
+          <div className="text-8xl md:scale-100 sm:scale-75 scale-50">
             <LogoDesignMain />
           </div>
         </div>

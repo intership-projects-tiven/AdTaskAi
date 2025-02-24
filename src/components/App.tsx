@@ -15,7 +15,7 @@ export default function App() {
       <Header />
       <main>
         <Hero />
-        <MovingLogo />
+        {/* <MovingLogo /> */}
         <SocialIcons />
         <Features />
         <SessionService />

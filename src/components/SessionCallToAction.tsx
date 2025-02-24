@@ -1,10 +1,11 @@
 import { PrimaryButton, SecondaryButton } from "./Buttons";
+import { LampLight } from "./LightEffects";
 import LogoDesignMain from "./LogoDesignMain";
 
 function SessionCallToAction() {
   return (
     <section className="callToAction container mx-auto flex flex-col gap-20 p-20 relative">
-       <p className="effect2 absolute left-1/2 -translate-x-1/2 -z-20 scale-x-90 scale-y-125 ">▲</p>
+       <LampLight/>
       <div className="flex gap-2 justify-center rounded-xl p-2">
         <div className="scale-75 md:scale-100">
           <LogoDesignMain />

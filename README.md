@@ -1,5 +1,5 @@
 
-**Project Name:** Internship Challenge - Single Page Website
+# Internship Challenge - Single Page Website
 
 **Project Overview:**
 This project was developed as part of an internship challenge, requiring the conversion of a Figma design into a fully responsive, real-world web page. While it is not pixel-perfect, the final result looks good enough and demonstrates my ability to translate Figma mockups into functional websites. I also learned new techniques while working on this project.
