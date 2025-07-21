@@ -43,7 +43,7 @@ export function NavPrimaryButton({ children, className }: props) {
     <button
       className={`relative overflow-hidden rounded-full bg-color3 py-2 ring-1 ring-color2 ${className}`}
     >
-      {children}{" "}
+      {children}
       <div className="absolute -bottom-6 left-1/2 -translate-x-1/2">
         <div className="glow mx-auto rounded-lg"></div>
       </div>
