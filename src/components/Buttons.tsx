@@ -1,3 +1,5 @@
+import TwinklingStars from "./TwinklingStars";
+
 interface props {
   children: React.ReactNode;
   className?: string;
@@ -5,15 +7,18 @@ interface props {
 
 export function PrimaryButton({ children, className }: props) {
   return (
-    <div className="p-1 rounded-full">
+    <div className="rounded-full p-1">
       <button
-      className={` py-2 min-w-40 rounded-full  bg-color3 relative overflow-hidden  ${className}`}
-        >
-      {children}
-      <div className="absolute -bottom-6 left-1/2 -translate-x-1/2">
-        <div className="glow mx-auto rounded-lg"></div>
-      </div>
-        </button>
+        className={`relative min-w-40 overflow-hidden rounded-full bg-color3 py-2 ${className} `}
+      >
+        {children}
+        <div className="absolute top-0">
+          <TwinklingStars />
+        </div>
+        <div className="absolute -bottom-6 left-1/2 -translate-x-1/2">
+          <div className="glow mx-auto rounded-lg"></div>
+        </div>
+      </button>
     </div>
   );
 }
@@ -21,9 +26,12 @@ export function PrimaryButton({ children, className }: props) {
 export function SecondaryButton({ children, className }: props) {
   return (
     <button
-      className={`ring-1 py-2 min-w-40 rounded-full ring-color2 shadow-red-900 relative overflow-hidden ${className}`}
+      className={`relative min-w-40 overflow-hidden rounded-full py-2 shadow-red-900 ring-1 ring-color2 ${className}`}
     >
       {children}
+      <div className="absolute top-0">
+        <TwinklingStars />
+      </div>
       <div className="absolute -bottom-6 left-1/2 -translate-x-1/2">
         <div className="glow mx-auto rounded-lg"></div>
       </div>
@@ -33,9 +41,9 @@ export function SecondaryButton({ children, className }: props) {
 export function NavPrimaryButton({ children, className }: props) {
   return (
     <button
-      className={`ring-1 py-2 rounded-full ring-color2 bg-color3 relative overflow-hidden  ${className}`}
+      className={`relative overflow-hidden rounded-full bg-color3 py-2 ring-1 ring-color2 ${className}`}
     >
-      {children}
+      {children}{" "}
       <div className="absolute -bottom-6 left-1/2 -translate-x-1/2">
         <div className="glow mx-auto rounded-lg"></div>
       </div>
@@ -45,9 +53,10 @@ export function NavPrimaryButton({ children, className }: props) {
 export function NavSecondaryButton({ children, className }: props) {
   return (
     <button
-      className={`ring-1 py-2 min-w-40 rounded-full ring-color2 shadow-red-900 relative overflow-hidden ${className}`}
+      className={`relative min-w-40 overflow-hidden rounded-full py-2 shadow-red-900 ring-1 ring-color2 ${className}`}
     >
       {children}
+
       <div className="absolute -bottom-6 left-1/2 -translate-x-1/2">
         <div className="glow mx-auto rounded-lg"></div>
       </div>
